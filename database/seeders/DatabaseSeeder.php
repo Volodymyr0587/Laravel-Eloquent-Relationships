@@ -10,6 +10,8 @@ use App\Models\Film;
 use App\Models\Author;
 use App\Models\Director;
 use App\Models\Movie;
+use App\Models\Photo;
+use App\Models\Product;
 use App\Models\Project;
 use App\Models\Task;
 use App\Models\User;
@@ -36,5 +38,8 @@ class DatabaseSeeder extends Seeder
         // Project::factory(10)->create();
         // Task::factory(50)->create();
         // User::factory(5)->create();
+
+        // Product::factory(10)->create();
+        // Photo::factory(30)->create();
     }
 }

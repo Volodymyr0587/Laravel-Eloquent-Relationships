@@ -47,4 +47,9 @@ class User extends Authenticatable
     {
         return $this->hasManyThrough(Task::class, Project::class);
     }
+
+    public function photos()
+    {
+        return $this->morphMany(Photo::class, 'imageable');
+    }
 }

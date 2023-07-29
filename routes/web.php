@@ -78,13 +78,24 @@ Route::get('/', function () {
     //     echo "-----------------------------------------<br>";
     // }
 
+    // $users = User::all();
+
+    // foreach ($users as $user) {
+    //     echo '<b>User: </b>' . $user->name . '<br>';
+    //     echo '<b>Tasks: </b><br>';
+    //     foreach ($user->tasks as $task) {
+    //         echo 'Task: ' . $task->name . '<br>';
+    //     }
+    //     echo "-----------------------------------------<br>";
+    // }
+
     $users = User::all();
 
     foreach ($users as $user) {
         echo '<b>User: </b>' . $user->name . '<br>';
-        echo '<b>Tasks: </b><br>';
-        foreach ($user->tasks as $task) {
-            echo 'Task: ' . $task->name . '<br>';
+        echo '<b>Photos: </b><br>';
+        foreach ($user->photos as $photo) {
+            echo 'Photo: ' . $photo->filename . '<br>';
         }
         echo "-----------------------------------------<br>";
     }
